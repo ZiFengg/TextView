@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--字号20，结尾绘制图片-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我爱Java"
+        android:textSize="20pt"
+        android:drawableEnd="@mipmap/ic_launcher"/>
+
+    <!--中间省略，字母大写-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="我爱Java我爱Java我爱Java我爱Java我爱Java我爱Javaaaaa"
+        android:ellipsize="middle"
+        android:textAllCaps="true"/>
+
+    <!--邮箱和电话-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="邮箱1174335928@qq.com，电话11111111111"
+        android:autoLink="email|phone"/>
+
+    <!--文字大小、颜色、阴影-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试文字"
+        android:shadowColor="#00f"
+        android:shadowDx="10.0"
+        android:shadowDy="8.0"
+        android:shadowRadius="3.0"
+        android:textColor="#f00"
+        android:textSize="18pt" />
+
+    <!--测试密码框-->
+    <TextView
+        android:text="@string/app_name"
+        android:password="true"
+        android:id="@+id/passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckedTextView
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:text="可勾选的文本"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="10pt"
+            android:background="@drawable/bg_border_1"
+            android:text="带边框的文字"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="10pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="圆角边框，渐变的文字"
+            android:background="@drawable/bg_border_2"/>
+
+    </LinearLayout>
+</LinearLayout>
